@@ -1,6 +1,5 @@
 package del1;
-import java.lang.Math;
-
+import java.lang.Math;     //importing Math package to enable math calculations
 import java.util.Scanner;  //importing Scanner package to enable user input
 public class AdditionCheck {
 	 public static void main(String[] args) {
@@ -34,21 +33,25 @@ public class AdditionCheck {
 	 
 	 //Calculations to extract each digit from each number 
 	 hundreds = num1 / 100;
-	 tens = (num1 - hundreds) / 10;
-	 ones = (num1 - tens - hundreds);
+	 tens = (num1 / 10) % 10; 
+	 ones = (num1 / 1)  % 10;
+	
 	 
 	 hundreds2 = num2 / 100;
-	 tens2 = (num2 - hundreds2) / 10;
-	 ones2 = (num2 - tens2 - hundreds2);
+	 tens2 = (num2 / 10) % 10;
+	 ones2 = (num2 / 1) % 10;
+
 	 
-	 //Sums of each respective digits;
+	 //Sums of each respective digit;
 	 int sumOne = hundreds + hundreds2;
 	 int sumTwo = tens + tens2;
 	 int sumThree = ones + ones2;
+	
+	
 	 
 	 //Task to compare the sums of each place between the two numbers and see if they're equal
 	 
-	 if( (sumOne == sumTwo || sumTwo == sumThree || sumOne == sumThree)){
+	 if((sumOne == sumTwo) && (sumTwo == sumThree) && (sumOne == sumThree)){
 		 System.out.println("True");
 	 }
 	 else {
