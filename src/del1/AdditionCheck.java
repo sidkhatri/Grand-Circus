@@ -12,6 +12,9 @@ public class AdditionCheck {
 	 int hundreds2 = 0;
 	 int tens2 = 0;
 	 int ones2 = 0;
+	 int sumOne;
+	 int sumTwo;
+	 int sumThree;
 	 
 	 System.out.print("Please enter first 3-digit number: ");  //user enters first number
 	 num1 = scnr.nextInt();
@@ -43,9 +46,9 @@ public class AdditionCheck {
 
 	 
 	 //Sums of each respective digit;
-	 int sumOne = hundreds + hundreds2;
-	 int sumTwo = tens + tens2;
-	 int sumThree = ones + ones2;
+	 sumOne = hundreds + hundreds2;
+	 sumTwo = tens + tens2;
+	 sumThree = ones + ones2;
 	
 	
 	 
